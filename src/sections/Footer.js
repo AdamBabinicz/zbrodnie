@@ -17,6 +17,11 @@ const Section = styled.section`
   color: ${(props) => props.theme.text};
   position: relative;
   margin: 5rem auto;
+
+  @media (max-width: 40em) {
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
 `;
 
 const LogoContainer = styled.div`
