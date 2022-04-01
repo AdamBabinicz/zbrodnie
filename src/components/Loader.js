@@ -20,6 +20,10 @@ const Container = styled(motion.div)`
   background: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
 
+  @media (max-width: 40em) {
+    display: none;
+  }
+
   svg {
     height: auto;
     width: 10vw;
