@@ -7,7 +7,10 @@ const VideoContainer = styled.section`
   width: 100%;
   height: 100vh;
   position: relative;
-  /* overflow: hidden; */
+
+  @media (max-width: 40em) {
+    background: url("./4.png") center/cover no-repeat fixed;
+  }
 
   video {
     width: 100%;
@@ -16,6 +19,7 @@ const VideoContainer = styled.section`
 
     @media (max-width: 40em) {
       object-position: center 10%;
+      display: none;
     }
 
     @media (max-width: 30em) {
@@ -31,7 +35,6 @@ const DarkOverlay = styled.div`
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.6)`};
 `;
 
 const Title = styled(motion.div)`
@@ -111,135 +114,137 @@ const item = {
 
 const CoverVideo = () => {
   return (
-    <VideoContainer>
-      <DarkOverlay />
-      <Title variants={container} initial="hidden" animate="show">
-        <div>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.14"
-            data-scroll-speed="4"
-            className="first"
-          >
-            Z
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.13"
-            data-scroll-speed="4"
-          >
-            b
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.12"
-            data-scroll-speed="4"
-          >
-            r
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.11"
-            data-scroll-speed="4"
-          >
-            o
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.10"
-            data-scroll-speed="4"
-          >
-            d
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.09"
-            data-scroll-speed="4"
-          >
-            n
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.08"
-            data-scroll-speed="4"
-          >
-            i
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.07"
-            data-scroll-speed="4"
-          >
-            e
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.06"
-            data-scroll-speed="4"
-          >
-            &nbsp;P
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.05"
-            data-scroll-speed="4"
-          >
-            u
-          </motion.h2>
-          <motion.h2
+    <>
+      <VideoContainer>
+        <DarkOverlay />
+        <Title variants={container} initial="hidden" animate="show">
+          <div>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.14"
+              data-scroll-speed="4"
+              className="first"
+            >
+              Z
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.13"
+              data-scroll-speed="4"
+            >
+              b
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.12"
+              data-scroll-speed="4"
+            >
+              r
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.11"
+              data-scroll-speed="4"
+            >
+              o
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.10"
+              data-scroll-speed="4"
+            >
+              d
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.09"
+              data-scroll-speed="4"
+            >
+              n
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.08"
+              data-scroll-speed="4"
+            >
+              i
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.07"
+              data-scroll-speed="4"
+            >
+              e
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.06"
+              data-scroll-speed="4"
+            >
+              &nbsp;P
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.05"
+              data-scroll-speed="4"
+            >
+              u
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.04"
+              data-scroll-speed="4"
+            >
+              t
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.03"
+              data-scroll-speed="4"
+            >
+              i
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.02"
+              data-scroll-speed="4"
+            >
+              n
+            </motion.h2>
+            <motion.h2
+              variants={item}
+              data-scroll
+              data-scroll-delay="0.01"
+              data-scroll-speed="4"
+            >
+              a
+            </motion.h2>
+          </div>
+          <motion.h3
             variants={item}
             data-scroll
             data-scroll-delay="0.04"
-            data-scroll-speed="4"
+            data-scroll-speed="2"
           >
-            t
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.03"
-            data-scroll-speed="4"
-          >
-            i
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.02"
-            data-scroll-speed="4"
-          >
-            n
-          </motion.h2>
-          <motion.h2
-            variants={item}
-            data-scroll
-            data-scroll-delay="0.01"
-            data-scroll-speed="4"
-          >
-            a
-          </motion.h2>
-        </div>
-        <motion.h3
-          variants={item}
-          data-scroll
-          data-scroll-delay="0.04"
-          data-scroll-speed="2"
-        >
-          Rzeź ludności cywilnej!
-        </motion.h3>
-      </Title>
-      <video src={MainVideo} type="video/mp4" autoPlay muted loop />
-    </VideoContainer>
+            Rzeź ludności cywilnej!
+          </motion.h3>
+        </Title>
+        <video src={MainVideo} type="video/mp4" autoPlay muted loop />
+      </VideoContainer>
+    </>
   );
 };
 
