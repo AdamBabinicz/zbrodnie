@@ -111,7 +111,7 @@ const Right = styled.div`
 
 const Item = styled(motion.div)`
   width: 45rem;
-  margin-right: 6rem;
+  margin-right: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,13 +128,13 @@ const Item = styled(motion.div)`
 
     @media (max-width: 48em) {
       height: 30rem;
+      max-height: 100%;
     }
   }
   h4 {
-    display: inline-block;
+    display: inline-flex;
     width: fit-content;
     text-align: center;
-    /* cursor: pointer; */
   }
 
   @media (max-width: 48em) {
@@ -244,20 +244,11 @@ const Shop = () => {
       </Left>
       <Right ref={horizontalRef}>
         <Product img={img1} title="Zrujnowana przez Rosjan dzielnica Kijowa" />
-        <Product
-          img={img2}
-          title="Ludzie przed zniszczonym budynkiem mieszkalnym w Kijowie"
-        />
+        <Product img={img2} title="Zniszczony budynek w Kijowie" />
         <Product img={img3} title="Zniszczenia po ataku na Kijów" />
         <Product img={img4} title="Ostrzał Charkowa" />
-        <Product
-          img={img5}
-          title="Cywilny budynek mieszkalny w Borodziance został zniszczony przez atak Rosji"
-        />
-        <Product
-          img={img6}
-          title="Natalia Sevriukova przed swoim domem po nocnych nalotach na Kijów"
-        />
+        <Product img={img5} title="Cywilny budynek mieszkalny w Borodziance" />
+        <Product img={img6} title="Natalia Sevriukova przed swoim domem" />
         <Product
           img={img7}
           title="Strażacy gaszą pożar w bloku mieszkalnym w Kijowie"
@@ -266,10 +257,7 @@ const Shop = () => {
           img={img8}
           title=" Ukraińskie dzieci uciekają przed rosyjskimi bombami"
         />
-        <Product
-          img={img9}
-          title="Mieszkańcy Irpina w obwodzie kijowskim próbują przejść zbombardowanym przez Rosjan mostem"
-        />
+        <Product img={img9} title="Zbombardowany przez Rosjan most w Irpinie" />
         <Product img={img10} title="Media donoszą o śmierci cywilów" />
       </Right>
     </Section>
