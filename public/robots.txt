@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://zelenski.netlify.app/sitemap.xml
+Host: https://zelenski.netlify.app
