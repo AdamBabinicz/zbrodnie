@@ -157,7 +157,7 @@ const Footer = () => {
           <li onClick={() => handleScroll("#okrucienstwo")}>Okrucieństwo</li>
           <li>
             <a
-              href="https://google.com"
+              href="//www.youtube.com/watch?v=laFmvsOp-z0"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -166,7 +166,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://google.com"
+              href="//ciekawostkihistoryczne.pl/2017/05/03/najbardziej-krwiozerczy-seryjny-morderca-w-najnowszej-historii"
               target="_blank"
               rel="noopener noreferrer"
             >
