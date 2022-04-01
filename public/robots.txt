@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://zelenski.netlify.app/sitemap.xml
-Host: https://zelenski.netlify.app
+Sitemap: https://zbrodnie-putina.netlify.app/sitemap.xml
+Host: https://zbrodnie-putina.netlify.app
