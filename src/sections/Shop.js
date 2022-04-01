@@ -117,14 +117,17 @@ const Item = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 48em) {
+    margin-right: 1rem;
+  }
+
   img {
     width: 100%;
     height: 35rem;
     object-fit: cover;
-    /* cursor: pointer; */
 
     @media (max-width: 48em) {
-      height: 28rem;
+      height: 30rem;
     }
   }
   h4 {
